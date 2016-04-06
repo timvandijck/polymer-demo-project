@@ -1,4 +1,4 @@
-<dom-module id="random-kittens">
+<dom-module id="giphy-search">
 
 	<!-- Import the iron-ajax component -->
 	<link rel="import" href="../vendor/iron-ajax/iron-ajax.html">
@@ -6,9 +6,11 @@
 	<template>
 		<iron-ajax auto
 		    url="http://api.giphy.com/v1/gifs/search"
-		    params='{"q":"kitten", "api_key":"dc6zaTOxFJmzC"}'
+		    params='{{ironParams}}'
 		    handle-as="json" last-response="{{kittens}}">
 	    </iron-ajax>
+
+	    <input type="search" value="{{searchString::input}}" /> <input type="button" value="Search" />
 
 		<template is="dom-repeat" items="{{kittens.data}}">
 
@@ -17,6 +19,6 @@
 		</template>
 	</template>
 
-	<script type="text/javascript" src="random-kittens.js"></script>
+	<script type="text/javascript" src="giphy-search.js"></script>
 
 </dom-module>

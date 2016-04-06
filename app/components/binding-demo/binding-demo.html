@@ -1,0 +1,16 @@
+<dom-module id="binding-demo">
+
+	<!-- Import the iron-ajax component -->
+	<link rel="import" href="../vendor/iron-ajax/iron-ajax.html">
+
+	<template>
+		<h2>Hello {{firstName}} {{lastName}} !!</h2>
+
+		<h3>{{customMessage}}</h3>
+
+		<input type="text" value="{{customMessage::input}}"/>
+	</template>
+
+	<script type="text/javascript" src="binding-demo.js"></script>
+
+</dom-module>
