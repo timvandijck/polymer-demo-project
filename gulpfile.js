@@ -9,7 +9,8 @@ gulp.task('build', [
 	'sass',
 	'scripts',
 	'vendor-css',
-	'vendor-js'
+	'vendor-js',
+	'polymer'
 ]);
 
 gulp.task('default', [

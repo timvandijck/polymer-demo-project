@@ -1,0 +1,22 @@
+<dom-module id="random-kittens">
+
+	<!-- Import the iron-ajax component -->
+	<link rel="import" href="../vendor/iron-ajax/iron-ajax.html">
+
+	<template>
+		<iron-ajax auto
+		    url="http://api.giphy.com/v1/gifs/search"
+		    params='{"q":"cat", "api_key":"dc6zaTOxFJmzC"}'
+		    handle-as="json" last-response="{{kittens}}">
+	    </iron-ajax>
+
+		<template is="dom-repeat" items="{{kittens.data}}">
+
+			<img src="{{item.images.original.url}}" /> <br/>
+
+		</template>
+	</template>
+
+	<script type="text/javascript" src="random-kittens.js"></script>
+
+</dom-module>

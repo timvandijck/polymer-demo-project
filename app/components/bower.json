@@ -1,5 +1,5 @@
 {
-  "name": "tims-starterkit",
+  "name": "components",
   "authors": [
     "Tim Van Dijck <tim.van.dijck@gmail.com>"
   ],
@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.2.3",
-    "normalize-css": "~4.0.0"
+    "polymer": "Polymer/polymer#~1.4.0",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.2.0"
   }
 }

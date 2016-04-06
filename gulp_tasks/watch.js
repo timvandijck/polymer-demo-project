@@ -7,4 +7,6 @@ gulp.task('watch', function() {
     gulp.watch('./app/assets/sass/**/*.scss', { interval: 500 }, ['sass']);
     gulp.watch(['./app/assets/images/**/*'], { interval: 500 }, ['images']);
 
+    gulp.watch(['./app/components/**/*'], { interval: 500 }, ['polymer']);
+
 });
