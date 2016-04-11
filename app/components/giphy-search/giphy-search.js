@@ -25,7 +25,7 @@ Polymer({
         ajaxRequest.params = {
             "q": this.searchString, 
             "api_key": "dc6zaTOxFJmzC",
-            "limit": 2
+            "limit": 5
         };
 
         ajaxRequest.generateRequest();
