@@ -6,16 +6,6 @@ Polymer({
     		type: String,
     		reflectToAttribute: true,
             notify: true,
-    	},
-
-    	ironParams: {
-    		type: Object,
-    		value: function() {
-    			return {
-    				"q": "", 
-    				"api_key": "dc6zaTOxFJmzC"
-    			};
-    		}
     	}
     },
 

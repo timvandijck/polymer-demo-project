@@ -6,7 +6,7 @@
 	<template>
 		<iron-ajax auto
 		    url="http://api.giphy.com/v1/gifs/search"
-		    params='{"q":"kitten", "api_key":"dc6zaTOxFJmzC"}'
+		    params='{"q":"kitten", "api_key":"dc6zaTOxFJmzC", "limit":3}'
 		    handle-as="json" last-response="{{kittens}}">
 	    </iron-ajax>
 
