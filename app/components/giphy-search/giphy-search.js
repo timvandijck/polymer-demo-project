@@ -12,10 +12,22 @@ Polymer({
     		type: Object,
     		value: function() {
     			return {
-    				"q": "kitten", 
+    				"q": "", 
     				"api_key": "dc6zaTOxFJmzC"
     			};
     		}
     	}
+    },
+
+    handleSearchClick: function(e, detail) {
+        var ajaxRequest = document.querySelector('#ajaxGiphy');
+        
+        ajaxRequest.params = {
+            "q": this.searchString, 
+            "api_key": "dc6zaTOxFJmzC",
+            "limit": 2
+        };
+
+        ajaxRequest.generateRequest();
     }
 });

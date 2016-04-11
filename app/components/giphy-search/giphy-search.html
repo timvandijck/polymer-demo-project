@@ -4,13 +4,15 @@
 	<link rel="import" href="../vendor/iron-ajax/iron-ajax.html">
 
 	<template>
-		<iron-ajax auto
+		<iron-ajax id="ajaxGiphy"
 		    url="http://api.giphy.com/v1/gifs/search"
-		    params='{{ironParams}}'
+		    params='{"q":"b", "api_key": "dc6zaTOxFJmzC"}'
 		    handle-as="json" last-response="{{kittens}}">
 	    </iron-ajax>
 
-	    <input type="search" value="{{searchString::input}}" /> <input type="button" value="Search" />
+	    <input type="search" value="{{searchString::input}}" />
+
+	    <input type="button" value="Search" on-click="handleSearchClick" />
 
 		<template is="dom-repeat" items="{{kittens.data}}">
 
